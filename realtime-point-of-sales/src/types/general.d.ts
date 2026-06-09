@@ -1,7 +1,8 @@
-export type formState = {
-    errors?: {
+export type FormState = {
+  errors?: {
+    _form?: string[];
+  };
+  status?: string;
+};
 
-        _form?: string[],
-    },
-    status?: string;
-}
+export type Preview = { file: File; displayUrl: string };

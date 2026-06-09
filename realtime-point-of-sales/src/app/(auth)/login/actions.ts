@@ -15,6 +15,7 @@ export async function login(
   if (!formData) {
     return INITIAL_STATE_LOGIN_FORM;
   }
+
   const validatedFields = loginSchemaForm.safeParse({
     email: formData.get("email"),
     password: formData.get("password"),
