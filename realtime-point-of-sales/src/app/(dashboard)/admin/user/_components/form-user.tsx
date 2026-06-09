@@ -33,7 +33,7 @@ export default function FormUser<T extends FieldValues>({
   setPreview?: (preview: Preview) => void;
 }) {
   return (
-    <DialogContent className="sm:max-w-[425px">
+    <DialogContent className="sm:max-w-[425px]">
       <Form {...form}>
         <DialogHeader>
           <DialogTitle>{type} User</DialogTitle>

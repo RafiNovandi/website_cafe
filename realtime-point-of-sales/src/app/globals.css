@@ -39,10 +39,10 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
-    --color-cream: #F3F4ED;
+  --color-cream: #f3f4ed;
   --color-sage: #536162;
   --color-darkolive: #424642;
-  --color-coffee: #C06014;
+  --color-coffee: #c06014;
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -130,5 +130,10 @@
     @apply bg-background text-foreground;
   }
   html {
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
   }
 }

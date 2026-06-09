@@ -8,8 +8,17 @@ const nextConfig: NextConfig = {
   },
   devIndicators: false,
   images: {
-    domains: ["https://hmeqctfnhnnaggnijbjg.supabase.co"],
+    domains: [
+      "https://hmeqctfnhnnaggnijbjg.storage.supabase.co",
+      "https://hmeqctfnhnnaggnijbjg.supabase.co",
+    ],
     remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "hmeqctfnhnnaggnijbjg.storage.supabase.co",
+        port: "",
+        pathname: "/**",
+      },
       {
         protocol: "https",
         hostname: "hmeqctfnhnnaggnijbjg.supabase.co",
