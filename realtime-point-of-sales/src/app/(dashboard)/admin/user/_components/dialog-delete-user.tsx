@@ -30,13 +30,13 @@ export default function DialogDeleteUser({
 
   useEffect(() => {
     if (deleteUserState?.status === "error") {
-      toast.error("Update User Failed", {
+      toast.error("Delete User Failed", {
         description: deleteUserState.errors?._form?.[0],
       });
     }
 
     if (deleteUserState?.status === "success") {
-      toast.success("Update User Success");
+      toast.success("Delete User Success");
       handleChangeAction?.(false);
       refetch();
     }
