@@ -9,7 +9,7 @@ export default function Failed() {
     <div className="w-full flex flex-col justify-center items-center gap-4">
       <Ban className="size-15 text-red-500" />
       <h1 className="text-2xl font-bold">Payment Failed</h1>
-      <Link href="/`/order/${order_id}`}">
+      <Link href="`/order/${order_id}`}">
         <Button>Back To Order</Button>
       </Link>
     </div>
