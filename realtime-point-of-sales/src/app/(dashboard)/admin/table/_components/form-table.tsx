@@ -10,7 +10,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Form } from "@/components/ui/form";
-import { STATUS_TABLE_LIST } from "@/constants/table.constant";
+import { STATUS_TABLE_LIST } from "@/constants/table-constant";
 import { Loader2 } from "lucide-react";
 import { FormEvent } from "react";
 import { FieldValues, Path, UseFormReturn } from "react-hook-form";

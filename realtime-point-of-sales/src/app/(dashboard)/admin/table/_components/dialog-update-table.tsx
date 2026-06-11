@@ -3,12 +3,9 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { startTransition, useActionState, useEffect, useState } from "react";
 import { toast } from "sonner";
 import { updateTable } from "../actions";
-import { Preview } from "@/types/general";
 import FormTable from "./form-table";
 import { Dialog } from "@/components/ui/dialog";
-import { Menu, MenuForm, menuFormSchema } from "@/validations/menu-validation";
-import { INITIAL_STATE_MENU } from "@/constants/menu-constans";
-import { INITIAL_STATE_TABLE } from "@/constants/table.constant";
+import { INITIAL_STATE_TABLE } from "@/constants/table-constant";
 import {
   Table,
   TableForm,

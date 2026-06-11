@@ -13,7 +13,7 @@ import { useMemo, useState } from "react";
 import { toast } from "sonner";
 import { cn } from "@/lib/utils";
 import { Table } from "@/validations/table-validation";
-import { HEADER_TABLE_TABLE } from "@/constants/table.constant";
+import { HEADER_TABLE_TABLE } from "@/constants/table-constant";
 import DialogCreateTable from "./dialog-create-table";
 import DialogUpdateTable from "./dialog-update-table";
 import DialogDeleteTable from "./dialog-delete-table";

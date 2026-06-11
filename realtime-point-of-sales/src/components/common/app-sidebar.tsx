@@ -63,7 +63,7 @@ export default function AppSidebar() {
                       <a
                         href={item.url}
                         className={cn("px-4 py-3 h-auto", {
-                          "bg-sage text-white hover:bg-sage hover:text-white":
+                          "bg-sage text-white hover:bg-gray-500 hover:text-white":
                             pathname === item.url,
                         })}
                       >

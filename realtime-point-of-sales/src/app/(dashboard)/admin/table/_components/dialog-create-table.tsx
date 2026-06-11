@@ -4,7 +4,7 @@ import { startTransition, useActionState, useEffect, useState } from "react";
 import { toast } from "sonner";
 import { createTable } from "../actions";
 import { TableForm, tableFormSchema } from "@/validations/table-validation";
-import { INITIAL_STATE_TABLE, INITIAL_TABLE } from "@/constants/table.constant";
+import { INITIAL_STATE_TABLE, INITIAL_TABLE } from "@/constants/table-constant";
 import FormTable from "./form-table";
 
 export default function DialogCreateTable({
