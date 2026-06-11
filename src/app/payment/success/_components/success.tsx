@@ -44,7 +44,7 @@ export default function Success() {
     <div className="w-full flex flex-col justify-center items-center gap-4">
       <CheckCircle className="size-15 text-green-400" />
       <h1 className="text-2xl font-bold">Payment Success</h1>
-      <Link href="`/order/${order_id}`}">
+      <Link href={`/order/${order_id}`}>
         <Button>Back To Order</Button>
       </Link>
     </div>
