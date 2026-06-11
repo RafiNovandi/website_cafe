@@ -3,7 +3,9 @@ import { createServerClient } from "@supabase/ssr";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function updaeSession(request: NextRequest) {
-  let supabaseResponse = NextResponse.next();
+  let supabaseResponse = NextResponse.next({
+    request,
+  });
 
   const { SUPABASE_URL, SUPABASE_ANON_KEY } = environment;
 
@@ -16,9 +18,9 @@ export async function updaeSession(request: NextRequest) {
         cookiesToSet.forEach(({ name, value }) => {
           request.cookies.set(name, value);
         });
-
-        supabaseResponse = NextResponse.next();
-
+        supabaseResponse = NextResponse.next({
+          request,
+        });
         cookiesToSet.forEach(({ name, value, options }) =>
           supabaseResponse.cookies.set(name, value, options),
         );
